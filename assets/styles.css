@@ -13,6 +13,7 @@
   --shadow-1: 0 8px 24px rgba(10, 22, 50, 0.08);
   --shadow-2: 0 12px 40px rgba(10, 22, 50, 0.12);
   --stroke-strong: 12;
+  --line-height: 1.5rem;
 }
 
 * {
@@ -607,13 +608,14 @@ h2::after {
 .panel .copy {
   color: var(--text);
   max-width: 52ch;
+  line-height: var(--line-height);
 }
 .panel .list-links {
   list-style: none;
   padding: 0;
   margin: 12px 0 0;
   display: grid;
-  gap: 10px;
+  gap: 1rem;
 }
 .panel .list-links a {
   color: var(--text);
