@@ -1,15 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ayusin.ph — A Unified Civic Engagement Platform for the Philippines</title>
-    <meta name="description" content="Ayusin.ph is a transparent bridge between Filipino citizens and LGUs — report issues, track resolutions, and drive accountable governance with clear escalation." />
+    <title>
+      Ayusin.ph — A Unified Civic Engagement Platform for the Philippines
+    </title>
+    <meta
+      name="description"
+      content="Ayusin.ph is a transparent bridge between Filipino citizens and LGUs — report issues, track resolutions, and drive accountable governance with clear escalation."
+    />
     <link rel="stylesheet" href="assets/styles.css" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23fff'/%3E%3Ccircle cx='32' cy='32' r='20' fill='%23FCD116'/%3E%3C/svg%3E">
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23fff'/%3E%3Ccircle cx='32' cy='32' r='20' fill='%23FCD116'/%3E%3C/svg%3E"
+    />
   </head>
   <body>
-    <div class="scroll-progress" aria-hidden="true"><div class="bar"></div></div>
+    <div class="scroll-progress" aria-hidden="true">
+      <div class="bar"></div>
+    </div>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">
@@ -18,7 +28,13 @@
           <span class="brand-name" data-project-name>Ayusin.ph</span>
         </div>
         <nav class="nav" aria-label="Primary">
-          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            Menu
+          </button>
           <ul id="nav-menu" class="nav-menu">
             <li><a href="#why">Why</a></li>
             <li><a href="#features">Features</a></li>
@@ -32,54 +48,78 @@
         </nav>
       </div>
     </header>
-
     <main id="main">
       <!-- Hero -->
       <section class="hero">
         <!-- Vector background: animated blobs and wave -->
-        <svg class="hero-svg" viewBox="0 0 1440 720" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg
+          class="hero-svg"
+          viewBox="0 0 1440 720"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
           <defs>
             <radialGradient id="gradBlue" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#1f5fff" stop-opacity=".35"/>
-              <stop offset="100%" stop-color="#1f5fff" stop-opacity="0"/>
+              <stop offset="0%" stop-color="#1f5fff" stop-opacity=".35" />
+              <stop offset="100%" stop-color="#1f5fff" stop-opacity="0" />
             </radialGradient>
             <radialGradient id="gradRed" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#f04444" stop-opacity=".28"/>
-              <stop offset="100%" stop-color="#f04444" stop-opacity="0"/>
+              <stop offset="0%" stop-color="#f04444" stop-opacity=".28" />
+              <stop offset="100%" stop-color="#f04444" stop-opacity="0" />
             </radialGradient>
             <radialGradient id="gradYellow" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#fcd116" stop-opacity=".22"/>
-              <stop offset="100%" stop-color="#fcd116" stop-opacity="0"/>
+              <stop offset="0%" stop-color="#fcd116" stop-opacity=".22" />
+              <stop offset="100%" stop-color="#fcd116" stop-opacity="0" />
             </radialGradient>
           </defs>
           <g class="blob blob--blue" transform="translate(160,120)">
-            <circle r="280" fill="url(#gradBlue)"/>
+            <circle r="280" fill="url(#gradBlue)" />
           </g>
           <g class="blob blob--red" transform="translate(1260,60)">
-            <circle r="220" fill="url(#gradRed)"/>
+            <circle r="220" fill="url(#gradRed)" />
           </g>
           <g class="blob blob--yellow" transform="translate(780,380)">
-            <circle r="260" fill="url(#gradYellow)"/>
+            <circle r="260" fill="url(#gradYellow)" />
           </g>
         </svg>
-        <svg class="hero-wave" viewBox="0 0 1440 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M0,64 C240,160 480,0 720,64 C960,128 1200,112 1440,64 L1440,200 L0,200 Z" fill="#ffffff" opacity="1"></path>
-          <path class="wave-move" d="M0,96 C240,176 480,16 720,96 C960,176 1200,144 1440,96 L1440,200 L0,200 Z" fill="#ffffff" opacity="0.6"></path>
+        <svg
+          class="hero-wave"
+          viewBox="0 0 1440 200"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M0,64 C240,160 480,0 720,64 C960,128 1200,112 1440,64 L1440,200 L0,200 Z"
+            fill="#ffffff"
+            opacity="1"
+          ></path>
+          <path
+            class="wave-move"
+            d="M0,96 C240,176 480,16 720,96 C960,176 1200,144 1440,96 L1440,200 L0,200 Z"
+            fill="#ffffff"
+            opacity="0.6"
+          ></path>
         </svg>
         <!-- Canvas starfield (performance-friendly) -->
         <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
         <div class="container hero-inner reveal">
           <div class="hero-title">
-            <h1 class="headline-animated split"><span>FIX WHAT MATTERS</span><br /><span>IN YOUR COMMUNITY</span></h1>
+            <h1 class="headline-animated split">
+              Fix what matters in your community
+            </h1>
           </div>
-          <p class="lead">Ayusin.ph is the single place to report local problems, see progress, and help LGUs resolve issues faster — with clear accountability and automatic escalation when action stalls.</p>
+          <p class="lead hero-subtitle">
+            Ayusin.ph is the single place to report local problems, see
+            progress, and help LGUs resolve issues faster — with clear
+            accountability and automatic escalation when action stalls.
+          </p>
           <div class="hero-ctas">
             <a class="btn primary" href="#contact">Join the Pilot</a>
             <a class="btn ghost" href="#roadmap">See the Plan</a>
           </div>
         </div>
       </section>
-
       <!-- Editorial Panels (inspired by stellar.org layout) -->
       <section class="panels section">
         <div class="container panel-grid">
@@ -87,98 +127,205 @@
             <div>
               <div class="eyebrow">Mission &amp; Values</div>
               <h3 class="display">Serve The Public, Together</h3>
-              <p class="copy">We are a non‑profit civic platform that amplifies citizen voice, helps LGUs deliver, and makes accountability visible. No ads. No data sales. Just public good.</p>
+              <p class="copy">
+                We are a non‑profit civic platform that amplifies citizen voice,
+                helps LGUs deliver, and makes accountability visible. No ads. No
+                data sales. Just public good.
+              </p>
             </div>
             <ul class="list-links">
-              <li><a href="#why"><span class="arr">→</span> Why This Exists</a></li>
-              <li><a href="#features"><span class="arr">→</span> How Citizens &amp; LGUs Use It</a></li>
-              <li><a href="#how"><span class="arr">→</span> How It Works</a></li>
+              <li>
+                <a href="#why"><span class="arr">→</span> Why This Exists</a>
+              </li>
+              <li>
+                <a href="#features"
+                  ><span class="arr">→</span> How Citizens &amp; LGUs Use It</a
+                >
+              </li>
+              <li>
+                <a href="#how"><span class="arr">→</span> How It Works</a>
+              </li>
             </ul>
           </article>
-
           <article class="panel panel-light">
             <div>
               <div class="eyebrow">Escalation &amp; Accountability</div>
               <h3 class="display">Instant, Visible Accountability</h3>
-              <p class="copy">Automated, rules‑based escalation elevates unresolved or urgent cases to the right authority — turning inaction into a public liability.</p>
+              <p class="copy">
+                Automated, rules‑based escalation elevates unresolved or urgent
+                cases to the right authority — turning inaction into a public
+                liability.
+              </p>
             </div>
             <ul class="list-links">
-              <li><a href="#escalation"><span class="arr">→</span> See the Escalation Engine</a></li>
-              <li><a href="#escalation"><span class="arr">→</span> Track Outcomes &amp; SLAs</a></li>
-              <li><a href="#roadmap"><span class="arr">→</span> Roadmap: From MVP to AI</a></li>
+              <li>
+                <a href="#escalation"
+                  ><span class="arr">→</span> See the Escalation Engine</a
+                >
+              </li>
+              <li>
+                <a href="#escalation"
+                  ><span class="arr">→</span> Track Outcomes &amp; SLAs</a
+                >
+              </li>
+              <li>
+                <a href="#roadmap"
+                  ><span class="arr">→</span> Roadmap: From MVP to AI</a
+                >
+              </li>
             </ul>
           </article>
-
           <article class="panel panel-yellow">
             <div>
               <div class="eyebrow">Citizen Applications</div>
               <h3 class="display">Report. Validate. Resolve.</h3>
-              <p class="copy">Submit reports with media and location, upvote existing issues, and track resolution step‑by‑step across clear, public statuses.</p>
+              <p class="copy">
+                Submit reports with media and location, upvote existing issues,
+                and track resolution step‑by‑step across clear, public statuses.
+              </p>
             </div>
             <ul class="list-links">
-              <li><a href="#features"><span class="arr">→</span> Citizen App Features</a></li>
-              <li><a href="#how"><span class="arr">→</span> How It Works</a></li>
+              <li>
+                <a href="#features"
+                  ><span class="arr">→</span> Citizen App Features</a
+                >
+              </li>
+              <li>
+                <a href="#how"><span class="arr">→</span> How It Works</a>
+              </li>
             </ul>
           </article>
-
           <article class="panel panel-dark">
             <div>
               <div class="eyebrow">LGU Console</div>
               <h3 class="display">Manage At A Glance</h3>
-              <p class="copy">Unified intake, kanban views, assignments, internal notes versus public replies, and analytics to prioritize the work that matters.</p>
+              <p class="copy">
+                Unified intake, kanban views, assignments, internal notes versus
+                public replies, and analytics to prioritize the work that
+                matters.
+              </p>
             </div>
             <ul class="list-links">
-              <li><a href="#features"><span class="arr">→</span> Console Overview</a></li>
-              <li><a href="#faq"><span class="arr">→</span> Security &amp; Privacy</a></li>
+              <li>
+                <a href="#features"
+                  ><span class="arr">→</span> Console Overview</a
+                >
+              </li>
+              <li>
+                <a href="#faq"
+                  ><span class="arr">→</span> Security &amp; Privacy</a
+                >
+              </li>
             </ul>
           </article>
         </div>
       </section>
-
-
       <!-- Marquee (Partners/Signals) -->
       <section class="marquee" aria-label="Pilot partners and signals">
         <div class="container">
           <div class="marquee-track" id="marquee-track">
             <div class="marquee-item">
-              <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z" fill="#0038a8"/></svg>
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z"
+                  fill="#0038a8"
+                />
+              </svg>
               Pilot LGUs: onboarding now
             </div>
             <div class="marquee-item">
-              <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12l6 6L21 6" stroke="#ce1126" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3 12l6 6L21 6"
+                  stroke="#ce1126"
+                  stroke-width="3"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+              </svg>
               Report → Respond SLA tracking
             </div>
             <div class="marquee-item">
-              <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="#fcd116"/><path d="M8 12h8M12 8v8" stroke="#0b1220" stroke-width="2"/></svg>
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="9" fill="#fcd116" />
+                <path d="M8 12h8M12 8v8" stroke="#0b1220" stroke-width="2" />
+              </svg>
               Open data for NGOs & media
             </div>
             <div class="marquee-item">
-              <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v10H4z" fill="#0038a8"/><path d="M7 10h10v2H7zM7 13h6v2H7z" fill="#fff"/></svg>
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M4 7h16v10H4z" fill="#0038a8" />
+                <path d="M7 10h10v2H7zM7 13h6v2H7z" fill="#fff" />
+              </svg>
               LGU console: kanban & assignments
             </div>
             <div class="marquee-item">
-              <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 4-9 4-9-4 9-4zm0 6l9 4-9 4-9-4 9-4z" fill="#ce1126"/></svg>
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 3l9 4-9 4-9-4 9-4zm0 6l9 4-9 4-9-4 9-4z"
+                  fill="#ce1126"
+                />
+              </svg>
               Automated escalation engine
             </div>
             <!-- duplicated via JS for seamless scroll -->
           </div>
         </div>
       </section>
-
       <!-- Executive Summary -->
       <section id="why" class="section">
         <div class="container two-col">
           <div class="reveal">
             <h2>Why It Matters</h2>
-            <p><span data-project-name>Ayusin.ph</span> gives every citizen a direct line to local government and makes every step of the response visible.</p>
-            <p>For LGUs, it’s a unified intake and case management tool that reduces noise, surfaces urgency, and builds public trust through transparency.</p>
+            <p>
+              <span data-project-name>Ayusin.ph</span> gives every citizen a
+              direct line to local government and makes every step of the
+              response visible.
+            </p>
+            <p>
+              For LGUs, it’s a unified intake and case management tool that
+              reduces noise, surfaces urgency, and builds public trust through
+              transparency.
+            </p>
           </div>
           <aside class="card reveal">
             <h3>Who Benefits</h3>
             <ul>
-              <li><strong>Citizens:</strong> simple reporting and real‑time status</li>
-              <li><strong>LGUs:</strong> centralized intake, assignments, SLAs, analytics</li>
-              <li><strong>NGOs/Media:</strong> insights that support oversight</li>
+              <li>
+                <strong>Citizens:</strong> simple reporting and real‑time status
+              </li>
+              <li>
+                <strong>LGUs:</strong> centralized intake, assignments, SLAs,
+                analytics
+              </li>
+              <li>
+                <strong>NGOs/Media:</strong> insights that support oversight
+              </li>
             </ul>
           </aside>
         </div>
@@ -200,7 +347,9 @@
             <article class="principle">
               <div class="icon-circle" aria-hidden="true">2</div>
               <h3>Privacy by Design</h3>
-              <p>Compliant with the PH Data Privacy Act; anonymized public data.</p>
+              <p>
+                Compliant with the PH Data Privacy Act; anonymized public data.
+              </p>
             </article>
             <article class="principle">
               <div class="icon-circle" aria-hidden="true">3</div>
@@ -210,12 +359,13 @@
             <article class="principle">
               <div class="icon-circle" aria-hidden="true">4</div>
               <h3>Transparency</h3>
-              <p>Visible statuses, open performance dashboards, and audit trails.</p>
+              <p>
+                Visible statuses, open performance dashboards, and audit trails.
+              </p>
             </article>
           </div>
         </div>
       </section>
-
       <!-- Built for Action (full-bleed band) -->
       <section id="features" class="feature-band">
         <div class="container">
@@ -239,7 +389,9 @@
               <ul>
                 <li>Unified intake and kanban status views</li>
                 <li>Assignments, SLAs, internal notes, public replies</li>
-                <li>Performance analytics: resolution time, hotspots, satisfaction</li>
+                <li>
+                  Performance analytics: resolution time, hotspots, satisfaction
+                </li>
               </ul>
             </article>
             <article class="feature-card" data-tilt>
@@ -262,7 +414,11 @@
         <div class="container two-col">
           <div class="reveal">
             <h2>Escalation Engine</h2>
-            <p>Timely action is non‑negotiable. Unresolved or high‑urgency reports automatically move up to the right office — with full public visibility.</p>
+            <p>
+              Timely action is non‑negotiable. Unresolved or high‑urgency
+              reports automatically move up to the right office — with full
+              public visibility.
+            </p>
             <ul class="checklist">
               <li>Smart triggers: upvotes, severity, and time waiting</li>
               <li>Tiered routing: Barangay → City/Municipality → Province</li>
@@ -271,18 +427,21 @@
           </div>
           <aside class="card reveal">
             <h3>Why It Works</h3>
-            <p class="muted">Visibility changes incentives: when everyone sees progress (or lack of it), timely response becomes the default.</p>
+            <p class="muted">
+              Visibility changes incentives: when everyone sees progress (or
+              lack of it), timely response becomes the default.
+            </p>
           </aside>
         </div>
       </section>
-
       <!-- How It Works -->
       <section id="how" class="section alt">
         <div class="container reveal">
           <h2>How It Works</h2>
           <div class="how-callout">
             <span class="badge">Priority</span>
-            <strong>Automatic Escalation:</strong> if a case stalls or is critical, it moves up and stays visible until resolved.
+            <strong>Automatic Escalation:</strong> if a case stalls or is
+            critical, it moves up and stays visible until resolved.
             <a class="btn small" href="#escalation">See details →</a>
           </div>
           <div class="how-vertical">
@@ -292,7 +451,10 @@
                 <div class="num">1</div>
                 <div class="content">
                   <h4>Report</h4>
-                  <p>Attach photo/video, location, and category. Submit in seconds.</p>
+                  <p>
+                    Attach photo/video, location, and category. Submit in
+                    seconds.
+                  </p>
                 </div>
               </li>
               <li class="how-item">
@@ -306,23 +468,26 @@
                 <div class="num">3</div>
                 <div class="content">
                   <h4>Triage &amp; Escalate</h4>
-                  <p>LGU assigns with SLA; if stalled or severe, the system escalates automatically.</p>
+                  <p>
+                    LGU assigns with SLA; if stalled or severe, the system
+                    escalates automatically.
+                  </p>
                 </div>
               </li>
               <li class="how-item">
                 <div class="num">4</div>
                 <div class="content">
                   <h4>Resolve</h4>
-                  <p>Completion verified publicly, with feedback from the reporter.</p>
+                  <p>
+                    Completion verified publicly, with feedback from the
+                    reporter.
+                  </p>
                 </div>
               </li>
             </ol>
           </div>
         </div>
       </section>
-
-      
-
       <!-- Roadmap (band with phase cards) -->
       <section id="roadmap" class="roadmap-band">
         <div class="container">
@@ -335,7 +500,14 @@
               <div class="progress" aria-hidden="true"></div>
               <div class="arrowhead" aria-hidden="true"></div>
             </div>
-            <div class="milestone top" style="left: 8%" data-pct="8" role="button" tabindex="0" aria-label="Phase 1 — Report and Respond">
+            <div
+              class="milestone top"
+              style="left: 8%"
+              data-pct="8"
+              role="button"
+              tabindex="0"
+              aria-label="Phase 1 — Report and Respond"
+            >
               <span class="dot" aria-hidden="true"></span>
               <div class="bubble">
                 <h3>Phase 1 — Report &amp; Respond</h3>
@@ -346,7 +518,14 @@
                 </ul>
               </div>
             </div>
-            <div class="milestone bottom" style="left: 36%" data-pct="36" role="button" tabindex="0" aria-label="Phase 2 — Engagement and Intelligence">
+            <div
+              class="milestone bottom"
+              style="left: 36%"
+              data-pct="36"
+              role="button"
+              tabindex="0"
+              aria-label="Phase 2 — Engagement and Intelligence"
+            >
               <span class="dot" aria-hidden="true"></span>
               <div class="bubble">
                 <h3>Phase 2 — Engagement &amp; Intelligence</h3>
@@ -357,7 +536,14 @@
                 </ul>
               </div>
             </div>
-            <div class="milestone top" style="left: 64%" data-pct="64" role="button" tabindex="0" aria-label="Phase 3 — Ecosystem and Services">
+            <div
+              class="milestone top"
+              style="left: 64%"
+              data-pct="64"
+              role="button"
+              tabindex="0"
+              aria-label="Phase 3 — Ecosystem and Services"
+            >
               <span class="dot" aria-hidden="true"></span>
               <div class="bubble">
                 <h3>Phase 3 — Ecosystem &amp; Services</h3>
@@ -368,7 +554,14 @@
                 </ul>
               </div>
             </div>
-            <div class="milestone bottom" style="left: 92%" data-pct="92" role="button" tabindex="0" aria-label="Phase 4 — Predictive Governance">
+            <div
+              class="milestone bottom"
+              style="left: 92%"
+              data-pct="92"
+              role="button"
+              tabindex="0"
+              aria-label="Phase 4 — Predictive Governance"
+            >
               <span class="dot" aria-hidden="true"></span>
               <div class="bubble">
                 <h3>Phase 4 — Predictive Governance</h3>
@@ -382,7 +575,6 @@
           </div>
         </div>
       </section>
-
       <!-- Updates/Highlights (open.gov.sg card style) -->
       <section id="updates" class="updates-band">
         <div class="container">
@@ -392,32 +584,50 @@
           </div>
           <div class="news-grid">
             <article class="news-card">
-              <img class="thumb" src="assets/img/thumb1.svg" alt="Pilot results illustration"/>
+              <img
+                class="thumb"
+                src="assets/img/thumb1.svg"
+                alt="Pilot results illustration"
+              />
               <div class="tag">Pilot</div>
               <h3>Barangay Pilot: Faster Responses</h3>
-              <p>Citizen reports helped reprioritize road repair and waste pickup in under a month.</p>
+              <p>
+                Citizen reports helped reprioritize road repair and waste pickup
+                in under a month.
+              </p>
               <a class="news-link" href="#contact">See pilot details →</a>
             </article>
             <article class="news-card">
-              <img class="thumb" src="assets/img/thumb2.svg" alt="Escalation feature illustration"/>
+              <img
+                class="thumb"
+                src="assets/img/thumb2.svg"
+                alt="Escalation feature illustration"
+              />
               <div class="tag">Feature</div>
               <h3>Automated Escalation Live</h3>
-              <p>Unresolved issues auto‑route with SLAs — visibility that drives action.</p>
+              <p>
+                Unresolved issues auto‑route with SLAs — visibility that drives
+                action.
+              </p>
               <a class="news-link" href="#escalation">See how it works →</a>
             </article>
             <article class="news-card">
-              <img class="thumb" src="assets/img/thumb3.svg" alt="Open data partnership illustration"/>
+              <img
+                class="thumb"
+                src="assets/img/thumb3.svg"
+                alt="Open data partnership illustration"
+              />
               <div class="tag">Partnership</div>
               <h3>NGOs Use Open Data</h3>
-              <p>Anonymous datasets inform service planning and community programs.</p>
+              <p>
+                Anonymous datasets inform service planning and community
+                programs.
+              </p>
               <a class="news-link" href="#features">Explore features →</a>
             </article>
           </div>
         </div>
       </section>
-
-      
-
       <!-- FAQ -->
       <section id="faq" class="section alt">
         <div class="container reveal">
@@ -425,19 +635,31 @@
           <div class="cards">
             <div class="card">
               <h3>Who can see my report?</h3>
-              <p>Public reports are visible by default. Sensitive topics can be submitted privately to the LGU when appropriate.</p>
+              <p>
+                Public reports are visible by default. Sensitive topics can be
+                submitted privately to the LGU when appropriate.
+              </p>
             </div>
             <div class="card">
               <h3>How are duplicates handled?</h3>
-              <p>Citizens are prompted to upvote similar nearby reports. LGUs can merge duplicates to keep workloads clean.</p>
+              <p>
+                Citizens are prompted to upvote similar nearby reports. LGUs can
+                merge duplicates to keep workloads clean.
+              </p>
             </div>
             <div class="card">
               <h3>What about data privacy?</h3>
-              <p>We align with the Philippine Data Privacy Act, apply encryption, and anonymize public datasets.</p>
+              <p>
+                We align with the Philippine Data Privacy Act, apply encryption,
+                and anonymize public datasets.
+              </p>
             </div>
             <div class="card">
               <h3>Does it work offline?</h3>
-              <p>Yes. Reports draft offline and sync when a connection is available (mobile apps).</p>
+              <p>
+                Yes. Reports draft offline and sync when a connection is
+                available (mobile apps).
+              </p>
             </div>
           </div>
         </div>
@@ -449,35 +671,56 @@
           <h2>Partner With Us</h2>
           <p>Interested in pilots, partnerships, or research? Let’s talk.</p>
           <div class="hero-ctas">
-            <a class="btn primary" href="mailto:contact@ayusin.ph?subject=Ayusin.ph%20Inquiry">Contact</a>
-            <a class="btn" href="mailto:press@ayusin.ph?subject=Press%20Inquiry">Press</a>
-            <a class="btn ghost" href="mailto:support@ayusin.ph?subject=Support%20Request">Support</a>
+            <a
+              class="btn primary"
+              href="mailto:contact@ayusin.ph?subject=Ayusin.ph%20Inquiry"
+              >Contact</a
+            >
+            <a class="btn" href="mailto:press@ayusin.ph?subject=Press%20Inquiry"
+              >Press</a
+            >
+            <a
+              class="btn ghost"
+              href="mailto:support@ayusin.ph?subject=Support%20Request"
+              >Support</a
+            >
           </div>
         </div>
       </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p class="small muted">© <span id="year"></span> <span data-project-name>Ayusin.ph</span>. Built for transparent, accountable governance.</p>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p class="small muted">
+          © <span id="year"></span> <span data-project-name>Ayusin.ph</span>.
+          Built for transparent, accountable governance.
+        </p>
+      </div>
+    </footer>
+    <!-- Jump-To pill (stellar-inspired) -->
+    <div
+      class="jump-pill"
+      role="dialog"
+      aria-label="Jump to section"
+      aria-modal="false"
+    >
+      <button
+        class="jump-toggle"
+        aria-expanded="false"
+        aria-controls="jump-menu"
+      >
+        Jump to…<span class="chev" aria-hidden="true">▾</span>
+      </button>
+      <div id="jump-menu" class="jump-menu" hidden>
+        <a href="#why">Why It Matters</a>
+        <a href="#features">Features</a>
+        <a href="#principles">Principles</a>
+        <a href="#escalation">Escalation</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#updates">Updates</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
-  </footer>
-
-  <!-- Jump-To pill (stellar-inspired) -->
-  <div class="jump-pill" role="dialog" aria-label="Jump to section" aria-modal="false">
-    <button class="jump-toggle" aria-expanded="false" aria-controls="jump-menu">Jump to…<span class="chev" aria-hidden="true">▾</span></button>
-    <div id="jump-menu" class="jump-menu" hidden>
-      <a href="#why">Why It Matters</a>
-      <a href="#features">Features</a>
-      <a href="#principles">Principles</a>
-      <a href="#escalation">Escalation</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#updates">Updates</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-
-  <script src="assets/script.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
   </body>
-  </html>
+</html>
