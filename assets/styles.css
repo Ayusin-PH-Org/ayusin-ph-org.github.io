@@ -589,7 +589,7 @@ h2::after {
   position: absolute;
   left: 0;
   bottom: -8px;
-  width: 72px;
+  width: 11rem;
   height: 6px;
   background: linear-gradient(90deg, var(--primary), #1b5cff);
   border-radius: 3px;
