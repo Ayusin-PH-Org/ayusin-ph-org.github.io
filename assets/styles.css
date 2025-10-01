@@ -16,6 +16,15 @@
   --line-height: 1.5rem;
 }
 
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-foreground {
+  color: var(--text);
+}
+
+
 .tracking-normal {
   line-height: var(--line-height);
 }
@@ -632,7 +641,6 @@ h2::after {
   gap: 1rem;
 }
 .panel .list-links a {
-  color: var(--text);
   font-weight: 700;
   display: inline-flex;
   align-items: center;
@@ -832,6 +840,8 @@ h2::after {
 .feature-card ul {
   margin: 0;
   padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
 }
 .feature-card ul li {
   margin: 0.35rem 0;
@@ -1255,8 +1265,8 @@ h2::after {
 .principle > .title {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: .75rem;
+  align-items: center;
 }
 .principle h3 {
   margin: 4px 0 6px;
