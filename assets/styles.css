@@ -89,7 +89,7 @@ a:hover { text-decoration: underline; }
 /* Headline wrapper */
 .hero-title { position: relative; display: inline-block; width: 68vw; }
 .hero-subtitle {
-  line-height: 1.75rem;
+  line-height: 1.70rem;
 }
 .split span { display: inline-block; }
 
